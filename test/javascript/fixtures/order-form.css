@@ -1,0 +1,62 @@
+/* Order form by Elle Meredith (July 2009) */
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+body { line-height: 1;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* Miscellaneous conveniences: */
+form label       {cursor: pointer;}
+acronym, abbr    {border-bottom:1px dotted; cursor:help;}
+fieldset         {border: none;}
+.clear           {clear:both;}
+
+.left            {float: left; margin-right: 20px; margin-bottom: 20px;}
+.right           {float: right; margin-left: 20px; margin-bottom: 20px;}
+
+.hide            {display: none; }
+.invisible       {visibility: hidden;}
+
+/* Eliminate border around link images */
+a img, :link img, :visited img {border: 0;}
+
+/* Resets 1em to 10px */
+body {font: 62.5%/150% arial, helvetica, sans-serif; background: #3bb7ff; color:#4f4f4f;}
+
+/* typography */
+h2 {font-size:185%; color:#06f; margin-bottom: 10px;}
+h3 {font-size:160%; color: #333; margin: 0; line-height: 125%; margin-bottom: 10px;}
+h4 {font-size:130%;color:#c30; margin: 20px 0 5px;}
+p, li, td, fieldset {font-size: 130%;}
+li li, td li, td p, fieldset p, fieldset h4, fieldset li {font-size: 100%;}
+fieldset h3 {font-size: 120%;}
+p {margin-bottom: 20px;}
+li {margin-bottom: 3px; margin-left: 20px;}
+
+/* general links */
+a {color:#c30; font-weight:bold; font-style:italic;}
+a:hover {color:#c90;background:#F4FBD2;}
+
+/* positioning */
+#container { width:900px; background:#fff; margin:0 auto 10px; padding: 20px;}
+
+/* order form */
+#instructions {background: #eee; padding: 10px; margin-bottom: 20px;}
+#instructions h4 {background: #c30; color: #fff; padding: 3px;}
+
+#cart {float: right; width: 260px; margin-top: 20px;}
+#cart {border: 1px #ddd solid; padding: 5px;}
+
+#orderform {margin-right:300px;}
+#orderform legend {font-size: 13px; font-weight: bold; display:block; padding: 20px 0;}
+#orderform p, #orderform li {font-size: 13px;}
+#orderform h3 {font-size: 14px;}
+#orderform .highlight {color:#c30; }
+
+#orderform fieldset#step1 fieldset.options {border: 1px dotted #3bb7ff; background: #fcfcfc; margin-bottom: 20px; padding: 5px;}
+#orderform fieldset#step1 fieldset.options legend {font-size: 14px; background: #3bb7ff; color: #fff; padding: 4px 7px; font-weight: normal}

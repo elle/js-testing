@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>OrderForm | JavaScript Testing Results</title>
+  <link rel="stylesheet" href="screw.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="order-form.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="../../../vendor/plugins/blue-ridge/lib/blue-ridge.js"></script>
+</head>
+
+<body>
+  	<div id="container">
+
+	<div id="instructions" >
+		<h4>Ordering Process:</h4>
+		<ol>
+			<li>Fill ot the order form below.</li>
+			<li>Enter your details.</li>
+			<li>Review your order and select payment option. You can select to pay by bank transfer or credit card. If you selected to pay by credit card, you will be redirected to Paypal website for payment.</li>
+			<li>You should receive an email outlining your order summary.</li>
+		</ol>
+		<br />
+		<p>Credit Card payments are processed by PayPal. All major credit cards accepted. You do not need a PayPal account to complete your transaction.</p>
+	</div>
+
+
+	<div id="cart" >
+		<h4>Order Summary:</h4>
+	</div>
+
+
+	<div id="orderform">
+		<form action="#">
+			<button id="add">Add another product</button>
+			<fieldset id="step1">
+				<legend>Step 1 of 3</legend>
+
+				<div class="product-template">
+					<h3>What would you like to Order? </h3>
+					<p><label for="product-type">{0}. What would you like to Order? </label>
+						<select id="product-type" name="product-type" class="product-type">
+							<option value="select" selected="selected">-Select-</option>
+							<option value="filters" class="filters">Pool Filter Cover</option>
+							<option value="cubby" class="cubby">Cubby House</option>
+							<option value="storage" class="storage">Storage Box</option>
+							<option value="planter" class="planter">Planter Box</option>
+							<option value="shower" class="shower">Outdoor Shower</option>
+							<option value="pump" class="pump">Water Pump Cover</option>
+					</select></p>
+
+					<fieldset class="filters options">
+						<legend>Pool Filter Covers Options</legend>
+
+							<h4>What size do you want your pool filter shed?</h4>
+							<p>Measure your filter and pump area and then see which of the standard sizes listed here best suits your needs.</p>
+							<ul>
+								<li>These standard size sheds are 1000mm high at front and 1300mm at the back.</li>
+								<li>Measurements are 'internal.' Please allow 150mm outside your measurements for wall thickness.</li>
+							</ul>
+							<br />
+							<p><label for="sidedepth">Side Depth:</label>
+							<select id="sidedepth" name="sidedepth">
+								<option value="select" selected="selected">-Select-</option>
+								<option value="1000mm" >1000mm</option>
+								<option value="1200mm" >1200mm</option>
+							</select>
+							<label for="frontwidth">Front Width:</label>
+							<select id="frontwidth" name="frontwidth"> 
+								<option value="select" selected="selected">-Select-</option>
+								<option value="900mm" >900mm</option>
+								<option value="1000mm" >1000mm</option>
+							</select></p>
+
+							<p>Filter Cover Rate: $</p>
+
+							<h4>Our filter covers feature the following items as standard:</h4>
+							<ul>
+								<li>Western Red Cedar siding panels</li>
+								<li>More stuff</li>
+							</ul>
+							<h4>More to Consider:</h4>
+							<p><label for="covertype">Cover Type:</label><select name="covertype" id="covertype">
+								<option value="cedar" selected="selected">Cedar (default)</option>
+								<option value="plywood">Plywood (no extra charge) </option>
+							</select></p>
+
+							<p><label for="doortype">Door Type:</label><select name="doortype" id="doortype">
+								<option value="Front Opening" selected="selected">Front Opening (default)</option>
+								<option value="Side Opening">Side Opening (no extra charge)</option>
+							</select></p>
+
+							<p><label for="coverfinish">Cover Finish (Staining):</label><select name="coverfinish" id="coverfinish">
+								<option value="Natural" selected="selected">Natural (default)</option>
+								<option value="Stained">Stained (15%)</option>
+							</select></p>
+
+							<p>Solid Back: <input name="solidback" id="solidback" type="checkbox" value="yes" /><label for="solidback">Rear panel ($95)</label></p>
+							<p>Acoustic Lining: <input name="acoustic" id="acoustic" type="checkbox" value="yes" /><label for="acoustic">Soundproof your shed ($95)</label></p>
+							<p>Installation: <input name="installation" id="installation" type="checkbox" value="yes" /><label for="installation">We&#8217;ll put it up for you (currently available Gold Coast or Brisbane only) ($95)</label></p>
+
+							<h4>One last thing we need to know&#8230;</h4>
+							<p>Your Pool Filter Type:
+							<input id="filtertypesand" name="filtertypesand" type="radio" value="Sand" /> <label for="filtertypesand">Sand</label>
+							<input id="filtertypecartridge" name="filtertypecartridge" type="radio" value="Cartridge" /> <label for="filtertypecartridge">Cartridge</label></p>
+
+							<p><label for="filtersqty">Quantity:</label> <input type="text" size="4" value="1" id="filtersqty" name="filtersqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+						</fieldset>
+
+
+						<fieldset class="cubby options">
+							<legend>Cubby House Options</legend>
+							<p><label for="cubbysize">What size Cubby House do you want?</label>
+							<select id="cubbysize" name="cubbysize">
+								<option value="select" selected="selected">-Select-</option>
+								<option value="cottage" >Cottage: 1.5m x 1.5m ($2,000)</option>
+								<option value="homestead" >Homestead: 2.0m x 2.0m ($2,500)</option>
+							</select></p>
+
+							<p><label for="cubbyfinish">Cubby House Finish (Staining):</label>
+							<select name="cubbyfinish" id="cubbyfinish">
+								<option value="natural" selected="selected">Natural (default)</option>
+								<option value="stained">Stained ($195)</option>
+							</select></p>
+
+							<p><label for="cubbyqty">Quantity:</label> <input type="text" size="4" value="1" id="cubbyqty" name="cubbyqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+							</fieldset>
+
+						<fieldset class="storage options">
+							<legend>Storage Box Options</legend>
+							<p><label for="storagesize">What size Storage Box do you want?</label>
+							<select id="storagesize" name="storagesize">
+								<option value="select" selected="selected">-Select-</option>
+								<option value="small" >Small: 1.2m x 0.8m ($295)</option>
+								<option value="large" >Large: 1.8m x 1.0m ($395)</option>
+							</select></p>
+
+							<p><label for="storagefinish">Storage Finish (Staining):</label>
+							<select name="storagefinish" id="storagefinish">
+								<option value="natural" selected="selected">Natural (default)</option>
+								<option value="stained">Stained ($95)</option>
+							</select></p>
+
+							<p><label for="storageqty">Quantity:</label> <input type="text" size="4" value="1" id="storageqty" name="storageqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+						</fieldset>
+
+
+						<fieldset class="planter options">
+							<legend>Planter Box Options</legend>	
+							<p><label for="plantersize">What size Planter Seat do you want?</label>
+							<select id="plantersize" name="plantersize">
+								<option value="select" selected="selected">-Select-</option>
+								<option value="small" >Small ($295)</option>
+								<option value="large" >Large ($395)</option>
+							</select></p>
+
+							<p><label for="planterfinish">Planter Seat Finish (Staining):</label>
+							<select name="planterfinish" id="planterfinish">
+								<option value="Natural" selected="selected">Natural (default)</option>
+								<option value="Stained">Stained ($95)</option>
+							</select></p>
+
+							<p><label for="planterqty">Quantity:</label> <input type="text" size="4" value="1" id="planterqty" name="planterqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+						</fieldset>
+
+						<fieldset class="shower options">
+							<legend>Outdoor Shower Options</legend>
+							<p><label for="showerqty">Quantity:</label> <input type="text" size="4" value="1" id="showerqty" name="showerqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+						</fieldset>
+
+						<fieldset class="pump options">
+							<legend>Water Pump Cover Options</legend>
+							<p><label for="pumpfinish">Water Pump Cover Finish (Staining):</label>
+							<select name="pumpfinish" id="pumpfinish">
+								<option value="natural" selected="selected">Natural (default)</option>
+								<option value="stained">Stained ($45)</option>
+							</select></p>
+
+							<p><label for="pumpqty">Quantity:</label> <input type="text" size="4" value="1" id="pumpqty" name="pumpqty" /></p>
+							<p><a href="#">Add to cart</a></p>
+						</fieldset>
+
+					</div>
+
+					<div class="buttonwrapper">
+						<input name="formNext1" type="button" class="open1 nextbutton" value="Next" alt="Next" title="Next" />
+					</div>
+
+					</fieldset>
+
+					<fieldset id="step2">
+						<legend> Step 2 of 3 </legend>
+						<p>All fields are required.</p>
+						<h3>Tell us about yourself</h3>
+						<p><label for="namefrom" class="required">Name:</label> <input type="text" name="namefrom" id="namefrom" title="Name is required" /></p>
+						<p><label for="street" class="required">Street:</label> <input type="text" name="street" id="street" title="Street is required" /></p>
+						<p><label for="suburb" class="required">Suburb:</label> <input name="suburb" id="suburb" title="Suburb is required" /></p>
+
+						<p><label for="state" class="required">State:</label>
+						<select name="state" id="state" title="Select a State">
+							<option value="">-Select-</option>
+							<option value="ACT">ACT</option>
+							<option value="NSW">NSW</option>
+							<option value="NT">NT</option>
+							<option value="QLD">QLD</option>
+							<option value="SA">SA</option>
+							<option value="TAS">TAS</option>
+							<option value="WA">WA</option>
+						</select> </p>
+
+						<p><label for="postcode" class="required">Postcode:</label> <input name="postcode" id="postcode" title="Postcode is required" /></p>
+						<p><label for="phone" class="required">Phone Number:</label> <input name="phone" id="phone" title="Phone Number is required" /> </p>
+						<p><label for="emailfrom" class="required">Email Address:</label> <input name="emailfrom" id="emailfrom" title="Email address is required" /> </p>
+
+						<br />
+						<div class="buttonwrapper">
+							<input name="prev" id="prev" type="button" class="navbutton" value="Back" alt="Back" title="Back" />
+							<input name="submit" type="submit" id="submit" value="Review your Order" alt="Review your Order" title="Review your Order" />
+						</div>
+					</fieldset>
+
+				</form>
+			</div>
+
+	</div>
+	</body>
+</body>
+</html>
